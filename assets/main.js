@@ -12,5 +12,5 @@ function sendEmail() {
 )}
 
 document.getElementById("emailForm").addEventListener("submit", (function (event) { 
-  event.preventDefault(); window.location.href = "/pages/thankyou.html" 
+  event.preventDefault(); window.location.href = "/teste-capturelead/pages/thankyou.html" 
 }))
