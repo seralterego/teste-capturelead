@@ -71,7 +71,7 @@ header ul li a:hover {
 
 section {
   max-width: 100vw;
-  height: auto;
+  height: 100vh;
 }
 
 #hero {

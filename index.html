@@ -24,9 +24,9 @@
         <p>A data do evento será 31 de Fevereiro, às 9h.</p>
       </div>
       <div class="email-form">
-        <form id="emailForm" onsubmit="sendEmail()">
+        <form id="emailForm">
           <input type="email" name="emailData" id="emailData" placeholder="Digite sue melhor e-mail aqui...">
-          <button type="submit" onsubmit="reset(); return false" >
+          <button type="submit" onsubmit="sendEmail(); reset(); return false">
             <img src="./assets/images/icon-mail.png" alt="">
             <p>Inscreva-se</p>
           </button>
