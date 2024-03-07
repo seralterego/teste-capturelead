@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captura de Lead - Home</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="./assets/images/logo.png" alt="Logo">
+    <ul>
+      <li><a href="#emailForm">Inscreva-se</a></li>
+    </ul>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h1>
+        Aprenda do ZERO <br>como tornar-se o profissional <br><strong>mais bem pago do mercado digital</strong>, <br>trabalhar de casa e com a possibilidade <br>de <strong><u>ganhos de 1.000 a 2.500€ por mês ou mais</u></strong>
+      </h1>
+      <div class="savethedate">
+        <img src="./assets/images/icon-calendar.png" alt="Calendar Icon">
+        <p>A data do evento será 31 de Fevereiro, às 9h.</p>
+      </div>
+      <div class="email-form">
+        <form id="emailForm" onsubmit="sendEmail()">
+          <input type="email" name="emailData" id="emailData" placeholder="Digite sue melhor e-mail aqui...">
+          <button type="submit" onsubmit="reset(); return false" >
+            <img src="./assets/images/icon-mail.png" alt="">
+            <p>Inscreva-se</p>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section> 
+
+  <footer id="footer">
+    <p>
+      Copyright © 2024 - feito com ❤ por Sérgio Leitão
+    </p>
+  </footer>
+
+  <script src="./assets/main.js"></script>
+  <script src="./assets/js/smtp.js"></script>
+</body>
+</html>
