@@ -17,12 +17,20 @@
   --mask-bg-primary: rgba(0, 62, 62, 0.6);
 }
 
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Outfit", sans-serif;
   color: var(--text-white);
   background-color: var(--bg-support);
   width: 100vw;
   height: 100vh;
+  min-height: 100%;
 }
 
 li {
@@ -77,10 +85,11 @@ section {
 #hero {
   background-image: linear-gradient(360deg, rgb(0,62,62), transparent), url('../assets/images/image01.png');
   background-size: cover;
-  background-position: 100% top;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 100px;
   margin: -66px 0 0 0;
+  height: auto;
 }
 
 #hero .container {
@@ -199,10 +208,8 @@ footer {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: auto 0 0;
   padding: 10px 30px;
   background-color: var(--mask-bg-primary);
   color: var(--text-white);
-  z-index: 1;
-  position: relative;
 }
