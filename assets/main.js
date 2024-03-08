@@ -31,7 +31,7 @@ const protocolo = window.location.protocol
 const dominio = window.location.hostname
 const port = window.location.port
 const baseUrlLocal = '/pages/thankyou.html';
-const baseUrlProd = '/pages/thankyou.html';
+const baseUrlProd = '/teste-capturelead/pages/thankyou.html';
 const urlLocal = (protocolo + "//" + dominio + ":" + port + baseUrlLocal)
 console.log(urlLocal)
 const urlProd = (protocolo + "//" + dominio + baseUrlProd)
