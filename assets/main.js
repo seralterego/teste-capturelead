@@ -37,7 +37,7 @@ const urlLocal = (protocolo + "//" + dominio + ":" + port + baseUrlLocal)
 console.log(urlLocal)
 const urlProd = (protocolo + "//" + dominio + baseUrlProd)
 console.log(urlProd)
-document.getElementById("emailForm").addEventListener("submit", ((e) => {
+/* document.getElementById("emailForm").addEventListener("submit", ((e) => {
     e.preventDefault();
     if (dominio === '127.0.0.1') {
       window.location.href = urlLocal;
@@ -45,4 +45,4 @@ document.getElementById("emailForm").addEventListener("submit", ((e) => {
       window.location.href = urlProd;
     }
   }
-))
+)) */
