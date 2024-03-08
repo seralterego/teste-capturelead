@@ -40,8 +40,10 @@ document.getElementById("emailForm").addEventListener("submit", ((e) => {
     e.preventDefault();
     if (dominio === '127.0.0.1') {
       window.location.href = urlLocal;
-    } else {
+    } else if (dominio === 'seralterego.github.io') {
       window.location.href = urlProd;
+    } else {
+      window.location.href = '/'
     }
   }
 ))
