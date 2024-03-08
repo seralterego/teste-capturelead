@@ -135,6 +135,14 @@ section {
   border-style: none;
   border-color: rgba(191, 195, 196, 0.25);
   padding: 15px;
+  transform: none;
+}
+.email-form form input:hover {
+  transition: .2s;
+  outline-width: 3px;
+  outline-offset: 1px;
+  outline-color: var(--text-placeholder);
+  outline-style: outset;
 }
 .email-form form input::placeholder {
   font-size: inherit;
@@ -143,8 +151,10 @@ section {
   filter: drop-shadow(0 4px 4px rgba(0,0,0, .25));
 }
 .email-form form input:focus-visible {
-  outline-width: 1px;
+  outline-width: 3px;
+  outline-offset: 1px;
   outline-color: var(--text-placeholder);
+  outline-style: outset;
 }
 
 .email-form form button {
@@ -160,6 +170,28 @@ section {
   color: var(--text-white);
   border-width: 0;
   border-radius: 8px;
+}
+
+.email-form form button:hover {
+  background-color: var(--text-white);
+  color: var(--icon-primary-color);
+  font-weight: 700;
+  transform: scale(1.1);
+  transition: .2s;
+  border: 3px solid var(--text-placeholder);
+}
+
+.email-form form button:hover > .icon-nohover {
+  display: none;
+}
+.email-form form button:hover > .icon-hover {
+  display: block;
+}
+.email-form form button > .icon-nohover {
+  display: block;
+}
+.email-form form button > .icon-hover {
+  display: none;
 }
 
 footer {
